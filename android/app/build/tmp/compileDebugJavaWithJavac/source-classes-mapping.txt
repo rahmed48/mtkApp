@@ -1,0 +1,14 @@
+com/quizapp/ReactNativeFlipper.java
+ com.quizapp.ReactNativeFlipper
+ com.quizapp.ReactNativeFlipper$1
+ com.quizapp.ReactNativeFlipper$2
+ com.quizapp.ReactNativeFlipper$2$1
+com/quizapp/MainApplication.java
+ com.mtkapp.MainApplication
+ com.mtkapp.MainApplication$1
+com/mtkapp/BuildConfig.java
+ com.mtkapp.BuildConfig
+com/quizapp/MainActivity.java
+ com.mtkapp.MainActivity
+com/facebook/react/PackageList.java
+ com.facebook.react.PackageList
