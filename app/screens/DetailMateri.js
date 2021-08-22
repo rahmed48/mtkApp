@@ -83,7 +83,6 @@ const DetailMateri = ({navigation, route}) => {
     );
   };
 
-
   const renderItem2 = ({item, index}) => {
     return (
       <TouchableOpacity
@@ -260,6 +259,11 @@ const DetailMateri = ({navigation, route}) => {
                 borderRadius: 10,
                 alignItems: 'center',
                 justifyContent: 'space-evenly',
+              }}
+              onPress={() => {
+                navigation.navigate('PetaKonsep', {
+                  title: title,
+                });
               }}>
               <MaterialCommunityIcons
                 name="map-outline"

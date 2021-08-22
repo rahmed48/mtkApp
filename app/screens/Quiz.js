@@ -128,33 +128,15 @@ const Quiz = ({navigation, route}) => {
       useNativeDriver: false,
     }).start();
   };
-  const restartQuiz = () => {
-    setShowScoreModal(false);
 
-    setCurrentQuestionIndex(0);
-    setScore(0);
-
-    setCurrentOptionSelected(null);
-    setCorrectOption(null);
-    setIsOptionsDisabled(false);
-    setShowNextButton(false);
-    Animated.timing(progress, {
-      toValue: 0,
-      duration: 1000,
-      useNativeDriver: false,
-    }).start();
+  const source = {
+    html: `${allQuestions[currentQuestionIndex]?.question}`,
   };
 
   const renderQuestion = () => {
     return (
-      <View>
-        {/* Question */}
-        <Text
-          style={{
-            fontSize: 16,
-          }}>
-          {allQuestions[currentQuestionIndex]?.question}
-        </Text>
+      <View style={{marginBottom: 15}}>
+        <RenderHtml source={source} />
       </View>
     );
   };

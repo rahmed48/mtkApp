@@ -6,13 +6,13 @@ import {NavigationContainer} from '@react-navigation/native';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 
 import QuizScreen from '../screens/Quiz';
-import SoalScreen from '../screens/Soal';
 import UjiKompetensiScreen from '../screens/UjiKompetensi';
 import MateriScreen from '../screens/Materi';
 import IsiSubMateriScreen from '../screens/IsiSubMateri';
 import IsiLatihanScreen from '../screens/IsiLatihan';
 import DetailMateriScreen from '../screens/DetailMateri';
 import KataKunciScreen from '../screens/KataKunci';
+import PetaKonsepScreen from '../screens/PetaKonsep';
 import KompetensiDasarScreen from '../screens/KompetensiDasar';
 import PengalamanBelajar from '../screens/PengalamanBelajar';
 import ProfileScreen from '../screens/Profile';
@@ -33,11 +33,6 @@ export default function Router() {
           options={{headerShown: false}}
           name="Quiz"
           component={QuizScreen}
-        />
-        <Stack.Screen
-          options={{headerShown: false}}
-          name="Soal"
-          component={SoalScreen}
         />
         <Stack.Screen
           options={{headerShown: false}}
@@ -80,6 +75,11 @@ export default function Router() {
           options={{headerShown: false}}
           name="KataKunci"
           component={KataKunciScreen}
+        />
+        <Stack.Screen
+          options={{headerShown: false}}
+          name="PetaKonsep"
+          component={PetaKonsepScreen}
         />
         <Stack.Screen
           options={{headerShown: false}}
