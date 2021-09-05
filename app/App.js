@@ -12,7 +12,8 @@ const App = () => {
 
   return splash ? (
     <View style={styles.container}>
-      <Text style={styles.textSplash}>Belajar Matematika</Text>
+      <Text style={styles.textSplash}>SMEd</Text>
+      <Text style={styles.textSplash2}>Smart Math Education</Text>
     </View>
   ) : (
     <Router />
@@ -29,5 +30,6 @@ const styles = StyleSheet.create({
     backgroundColor: 'white',
     padding: 8,
   },
-  textSplash: {fontSize: 20, fontWeight: '700', fontFamily: 'Poppins-SemiBold'},
+  textSplash: {fontSize: 58, fontWeight: '700'},
+  textSplash2: {fontSize: 20, fontWeight: '700'},
 });

@@ -53,8 +53,6 @@ const UjiKompetensi = ({navigation}) => {
       setHome(response.data.materi);
     })
     .catch(err => console.log('err:', err));
-  // console.log(DATA);
-  // console.log(home[0]._id);
 
   const renderItem = ({item}) => {
     return (

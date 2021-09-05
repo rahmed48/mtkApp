@@ -203,6 +203,31 @@ const DetailMateri = ({navigation, route}) => {
                 margin: 7,
                 backgroundColor: '#FFFFFF',
                 height: 90,
+                width: 120,
+                elevation: 5,
+                shadowColor: '#FB9646',
+                borderRadius: 10,
+                alignItems: 'center',
+                justifyContent: 'space-evenly',
+              }}
+              onPress={() => {
+                navigation.navigate('PetaKonsep', {
+                  title: title,
+                });
+              }}>
+              <MaterialCommunityIcons
+                name="map-outline"
+                color={'#FB9646'}
+                size={24}
+              />
+              <Text style={{fontWeight: '700'}}>Peta Konsep</Text>
+            </TouchableOpacity>
+            <TouchableOpacity
+              style={{
+                marginTop: 50,
+                margin: 7,
+                backgroundColor: '#FFFFFF',
+                height: 90,
                 width: 150,
                 elevation: 5,
                 shadowColor: '#FB9646',
@@ -247,31 +272,7 @@ const DetailMateri = ({navigation, route}) => {
               />
               <Text style={{fontWeight: '700'}}>Pengalaman Belajar</Text>
             </TouchableOpacity>
-            <TouchableOpacity
-              style={{
-                marginTop: 50,
-                margin: 7,
-                backgroundColor: '#FFFFFF',
-                height: 90,
-                width: 120,
-                elevation: 5,
-                shadowColor: '#FB9646',
-                borderRadius: 10,
-                alignItems: 'center',
-                justifyContent: 'space-evenly',
-              }}
-              onPress={() => {
-                navigation.navigate('PetaKonsep', {
-                  title: title,
-                });
-              }}>
-              <MaterialCommunityIcons
-                name="map-outline"
-                color={'#FB9646'}
-                size={24}
-              />
-              <Text style={{fontWeight: '700'}}>Peta Konsep</Text>
-            </TouchableOpacity>
+            
           </ScrollView>
         </SafeAreaView>
       </View>
